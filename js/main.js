@@ -14,7 +14,8 @@ startGameDom.addEventListener('click', function(){
     for(i=1 ; i <= boxNumber ; i++){
         const box = createNewBoxNumbered(i);
         box.addEventListener('click', function(){
-            
+            console.log(box.textContent);
+            this.classList.add('selected');
         });
         gridContainerDom.append(box);
     }
